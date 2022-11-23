@@ -99,7 +99,6 @@
                         <img src="views/images/logo.png" class="mr-3" alt="" style="width:150px;opacity: 0.7">
                         <h2 class="text-center mb-3">EMPLOYEES</h2>
                         <div class="row">
-
                             <table border="1" style="width:100%;">
                                 <tr>
                                     <th>Id</th>
@@ -124,6 +123,7 @@
                             </table>
                         </div>
                     </div>
+                    <a href="adminPage">BACK</a>    
                 </div>
             </div>
         </div>

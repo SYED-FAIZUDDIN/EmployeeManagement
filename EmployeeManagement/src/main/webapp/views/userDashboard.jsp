@@ -108,16 +108,15 @@
                                         <td>Date of Birth</td>
                                         <td>${emp.dateofbirth}</td>
                                     </tr>
-                                    <tr>
-                                        <td>E-MAIL</td>
-                                        <td>${emp.email}</td>
-                                    </tr>
                                 </table>
                                 </form>
                             </div>
                             <div class="col-6">
                                 <table>
-
+                                    <tr>
+                                        <td>E-MAIL</td>
+                                        <td>${emp.email}</td>
+                                    </tr>
                                     <tr>
                                         <td>Password</td>
                                         <td>${emp.password}</td>
@@ -157,7 +156,7 @@
                             <p><a href="ExtraDetails/${emp.employeeId}">ADD DETAILS</a></p>
                         </button>
                         <button class="btnSubmit">
-                            <p><a href="views/adminPage">Back</a></p>
+                            <p><a href="views/adminPage.jsp">Back</a></p>
                         </button>
                     </div>
                 </div>

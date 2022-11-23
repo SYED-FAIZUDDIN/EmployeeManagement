@@ -138,7 +138,7 @@ h2.text-center.mb-3 {
                     <table>
                       <tr>
                         <td>Image</td>
-                        <td> <input type="file" name="photo"> </td>
+                        <td> <input type="file" name="photo" required> </td>
                     </tr> 
                      
 

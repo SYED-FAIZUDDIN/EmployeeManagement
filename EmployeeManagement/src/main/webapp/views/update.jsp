@@ -10,73 +10,154 @@
             <table>
                 <input type="number" name="employeeId" value="${emp.employeeId}" hidden>
                 <tr>
-                    First Name :<input type="text" name="firstname" value="${emp.firstname}">
+                    <td>
+                        First Name :
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" value="${emp.firstname}">
+                    </td>
                 </tr>
                 <tr>
-                    Last Name :<input type="text" name="lastname" value="${emp.lastname}">
+                    <td>
+                        Last Name :
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" value="${emp.lastname}">
+                    </td>
                 </tr>
                 <tr>
-                    Email : <input type="text" name="email" value="${emp.email}">
+                    <td>
+                        Email :
+                    </td>
+                    <td>
+                        <input type="text" name="email" value="${emp.email}">
+                    </td>
                 </tr>
                 <tr>
-                    Address :<input type="text" name="address" value="${emp.address}">
+                    <td>
+                        Password :
+                    </td>
+                    <td>
+                        <input type="text" name="password" value="${emp.password}">
+                    </td>
                 </tr>
                 <tr>
-                    Phone Number:<input type="number" name="phoneno" value="${emp.phoneno}">
+                    <td>
+                        Address :
+                    </td>
+                    <td>
+                        <input type="text" name="address" value="${emp.address}">
+                    </td>
                 </tr>
                 <tr>
-                    Password :<input type="text" name="password" value="${emp.password}">
+                    <td>
+                        Phone Number:
+                    </td>
+                    <td>
+                        <input type="number" name="phoneno" value="${emp.phoneno}">
+                    </td>
                 </tr>
                 <tr>
-                    Designation :<input type="text" name="designation" value="${emp.designation}"
-                    >
+                    <td>
+                        Designation :
+                    </td>
+                    <td>
+                        <input type="text" name="designation" value="${emp.designation}">
+                    </td>
                 </tr>
                 <tr>
-                    Employee Type :<input type="text" name="employeetype" value="${emp.employeetype}"
-                    >
+                    <td>
+                        Employee Type :
+                    </td>
+                    <td>
+                        <input type="text" name="employeetype" value="${emp.employeetype}">
+                    </td>
                 </tr>
                 <tr>
-                    Total Experience :<input type="text" name="totalexperience" value="${emp.totalexperience}"
-                    >
+                    <td>
+                        Total Experience :
+                    </td>
+                    <td>
+                        <input type="text" name="totalexperience" value="${emp.totalexperience}">
+                    </td>
                 </tr>
                 <tr>
-                    Alternate Phone Number :<input type="tel" name="alternatephno" value="${emp.alternatephno}"
-                    >
+                    <td>
+                        Alternate Phone Number :
+                    </td>
+                    <td>
+                        <input type="tel" name="alternatephno" value="${emp.alternatephno}">
+                    </td>
                 </tr>
                 <tr>
-                    Date Of Birth :<input type="date" name="dateofbirth" value="${emp.dateofbirth}"
-                    >
+                    <td>
+                        Date Of Birth :
+                    </td>
+                    <td><input type="date" name="dateofbirth" value="${emp.dateofbirth}"></td>
                 </tr>
                 <tr>
-                    Gender:<input type="text" name="gender" value="${emp.gender}">
+                    <td>
+                        Gender:
+                    </td>
+                    <td><input type="text" name="gender" value="${emp.gender}"></td>
                 </tr>
                 <tr>
-                    Date Of Joining :<input type="date" name="dateofjoining" value="${emp.dateofjoining}"
-                    >
+                    <td>
+                        Date Of Joining :
+                    </td>
+                    <td>
+                        <input type="date" name="dateofjoining" value="${emp.dateofjoining}">
+                    </td>
                 </tr>
                 <tr>
+                    <td>
+                        Project :
+                    </td>
+                    <td>
+                        <input type="text" name="project" value="${emps.project}">
+                    </td>
 
-                    Proj</tr>ect :<input type="text" name="project" value="${emps.project}">
-
                 <tr>
-                    Manager :<input type="text" name="manager" value="${emps.manager}">
+                    <td>
+                        Manager :
+                    </td>
+                    <td>
+                        <input type="text" name="manager" value="${emps.manager}">
+                    </td>
                 </tr>
                 <tr>
-                    Mentor : <input type="text" name="mentor" value="${emps.mentor}">
+                    <td>
+                        Mentor :
+                    </td>
+                    <td>
+                        <input type="text" name="mentor" value="${emps.mentor}">
+                    </td>
                 </tr>
                 <tr>
-                    Role :<input type="text" name="role" value="${emps.role}">
+                    <td>
+                        Role :
+                    <td>
+                        <input type="text" name="role" value="${emps.role}">
                 </tr>
                 <tr>
-                    Task:<input type="text" name="task" value="${emps.task}">
+                    <td>
+                        Task:
+                    </td>
+                    <td>
+                        <input type="text" name="task" value="${emps.task}">
+                    </td>
                 </tr>
                 <tr>
-                    Technical Stack:<input type="text" name="technicalStack" value="${emps.technicalStack}"
-                    >
+                    <td>
+                        Technical Stack:
+                    </td>
+                    <td>
+                        <input type="text" name="technicalStack" value="${emps.technicalStack}">
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td><input type="submit" value="UPDATE"></td>
+                    <td>
+                    <td><input type="submit" value="UPDATE">
                 </tr>
             </table>
         </form>

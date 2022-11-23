@@ -227,19 +227,10 @@ public class EmployeeController {
 
 	@ExceptionHandler(value = NullPointerException.class)
 	public String handlerNPE(Model m, Exception e) {
-		m.addAttribute("err", "Record Found Empty");
+		m.addAttribute("err", "No User Found Please Contact to Admin");
 		logger.error("ERROR : [EmployeeController][handlerE]" + e);
 		logger.debug("DEBUG : [EmployeeController][handlerE]", e);
 		logger.warn("WARN :[EmployeeController][handlerE]" + e);
-		return "exception";
-	}
-
-	@ExceptionHandler(value = Exception.class)
-	public String handlerE(Model m, Exception e) {
-		m.addAttribute("err", "Exception");
-		logger.error("ERROR : [EmployeeController][handlerE]" + e);
-		logger.debug("DEBUG : [EmployeeController][handlerE]", e);
-		logger.warn("WARN :[EmployeeController][handlerE]" + e);
-		return "exception";
+		return "employeeLogin";
 	}
 }

@@ -170,11 +170,11 @@ public class EmployeeController {
 
 	@RequestMapping("employeeLogin")
 	public String loginValidation(@RequestParam String email, @RequestParam String password, Model model) {
-		EmployeeModel employeeEntity = service.getEmployeeByEmail(email);
+		EmployeeModel employeeModel = service.getEmployeeByEmail(email);
 		EmployeeProfessionalModel employeeProfessionalModel = service
-				.getProfessionalDetails(employeeEntity.getEmployeeId());
-		if (password.equals(employeeEntity.getPassword())) {
-			model.addAttribute("emp", employeeEntity);
+				.getProfessionalDetails(employeeModel.getEmployeeId());
+		if (password.equals(employeeModel.getPassword())) {
+			model.addAttribute("emp", employeeModel);
 			model.addAttribute("emps", employeeProfessionalModel);
 			return "employeeDetails";
 		} else {
@@ -190,11 +190,12 @@ public class EmployeeController {
 	}
 
 	@RequestMapping("userDetails")
-	public String updated(@ModelAttribute EmployeeProfessionalModel employeeEntity, HttpServletRequest request,
-			Model model) {
-		model.addAttribute("emp", employeeEntity);
-		service.saveEmplyee(employeeEntity);
-		return "userDetailsDashboard";
+	public String updated(@ModelAttribute EmployeeProfessionalModel employeeProfessionalModel, Model model) {
+		EmployeeModel employeeModel = service.getEmployeeDetails(employeeProfessionalModel.getpId());
+		model.addAttribute("emp", employeeModel);
+		model.addAttribute("emps", employeeProfessionalModel);
+		service.saveEmplyee(employeeProfessionalModel);
+		return "employeeDetails";
 	}
 
 	@ExceptionHandler(value = ConstraintViolationException.class)
@@ -233,12 +234,12 @@ public class EmployeeController {
 		return "exception";
 	}
 
-//	@ExceptionHandler(value = Exception.class)
-//	public String handlerE(Model m, Exception e) {
-//		m.addAttribute("err", "Exception");
-//		logger.error("ERROR : [EmployeeController][handlerE]" + e);
-//		logger.debug("DEBUG : [EmployeeController][handlerE]", e);
-//		logger.warn("WARN :[EmployeeController][handlerE]" + e);
-//		return "exception";
-//	}
+	@ExceptionHandler(value = Exception.class)
+	public String handlerE(Model m, Exception e) {
+		m.addAttribute("err", "Exception");
+		logger.error("ERROR : [EmployeeController][handlerE]" + e);
+		logger.debug("DEBUG : [EmployeeController][handlerE]", e);
+		logger.warn("WARN :[EmployeeController][handlerE]" + e);
+		return "exception";
+	}
 }

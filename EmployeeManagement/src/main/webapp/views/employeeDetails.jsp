@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMPLOYEE DETAILS</title>
 </head>
-<link rel="stylesheet" href="views/style.css">
 
 <body>
     <h1></h1>
@@ -79,6 +78,7 @@
 
     <div class="pdetails">
     <div>
+        PROFESSIONAL DETAILS
         <p></p>
         PROJECT :
         ${emps.project}
@@ -110,10 +110,10 @@
     </div>
 </div>
 <div>
-    <p><a href="employeePage" class="back">Back</a></p>
+    <p><a href="employeePage">LOGOUT</a></p>
 </div>
 <div>
-    <p><a href="/">LOGOUT</a></p>
+    <p><a href="/">Home</a></p>
 </div>
 </body>
 

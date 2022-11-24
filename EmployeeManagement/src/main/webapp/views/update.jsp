@@ -6,9 +6,12 @@
 <body>
     <center>
         <h1>UPDATE PAGE</h1>
+        <img src="${pageContext.request.contextPath }/${emp.photo}"> 
+        <p></p>
         <form action="${pageContext.request.contextPath }/updateRecord" method="post">
             <table>
                 <input type="number" name="employeeId" value="${emp.employeeId}" hidden>
+
                 <tr>
                     <td>
                         First Name :
@@ -161,5 +164,6 @@
                 </tr>
             </table>
         </form>
+        <a href="getAll">BACK</a>    
     </center>
 </body>

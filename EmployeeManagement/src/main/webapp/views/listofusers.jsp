@@ -87,6 +87,7 @@
     </style>
     <!-- <link rel="stylesheet" type="text/css" href="views/css/util.css" /> -->
     <link rel="stylesheet" type="text/css" href="views/css/main.css" />
+    <title>EMPLOYEES</title>
 </head>
 
 <body>
@@ -123,7 +124,7 @@
                             </table>
                         </div>
                     </div>
-                    <a href="adminPage">BACK</a>    
+                    <a href="javascript:history.back()">BACK</a>    
                 </div>
             </div>
         </div>

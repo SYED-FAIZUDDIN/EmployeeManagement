@@ -9,112 +9,96 @@
 </head>
 
 <body>
-    <h1></h1>
-    <div class="empImage">
+    <table>
+        IMAGE
         <img src="${emp.photo}" alt="profilePic">
-    </div>
-    <div class="id">
-        <h1>
-            ${emp.firstname}
-            ${emp.lastname}
-        </h1>
-        <p>EMPLOYEEID RST-${emp.employeeId}</p>
-        <div>
-            <p></p>
-            PHONENO - 
-            ${emp.phoneno}
-        </div>
-        <div>
-            <p></p>
-            ALTERNATEPHNO - 
-            ${emp.alternatephno}
-        </div>
-        <div>
-            <p></p>
-            DATE OF BIRTH - 
-            ${emp.dateofbirth}
-        </div>
-        <div>
-            <p></p>
-            E-MAIL - 
-            ${emp.email}
-        </div>
-        <div>
-            <p></p>
-            PASSWORD - 
-            ${emp.password}
-        </div>
-        <div>
-            <p></p>
-            ADDRESS - 
-            ${emp.address}
-        </div>
-        <div>
-            <p></p>
-            GENDER - 
-            ${emp.gender}
-        </div>
-        <div>
-            <p></p>
-            DATE OF JOINING - 
-            ${emp.dateofjoining}
-        </div>
-        <div>
-            <p></p>
-            DESIGNATION - 
-            ${emp.designation}
-        </div>
-        <div>
-            <p></p>
-            EMPLOYEE TYPE - 
-            ${emp.employeetype}
-        </div>
-        <div>
-            <p></p>
-            EXPERIENCE - 
-            ${emp.totalexperience}
-        </div>
-    </div>
+        <tr>
+            <td> FIRST Name</td>
+            <td> ${emp.firstname}</td>
+        </tr>
 
-    <div class="pdetails">
-    <div>
-        PROFESSIONAL DETAILS
-        <p></p>
-        PROJECT :
-        ${emps.project}
-    </div>
-    <div>
-        <p></p>
-        ROLE :
-        ${emps.role}
-    </div>
-    <div>
-        <p></p>
-        TECHNICALSTACK : 
-        ${emps.technicalStack}
-    </div>
-    <div>
-        <p></p>
-        TASK : 
-        ${emps.task}
-    </div>
-    <div>
-        <p></p>
-        MANAGER : 
-        ${emps.manager}
-    </div>
-    <div>
-        <p></p>
-        MENTOR : 
-        ${emps.mentor}
-    </div>
-</div>
-<div>
-    <p><a href="employeePage">LOGOUT</a></p>
-</div>
-<div>
-    <p><a href="/">Home</a></p>
-</div>
+        <tr>
+            <td>LAST NAME</td>
+            <td>${emp.lastname}</td>
+        </tr>
+        <tr>
+            <td>EMPLOYEEID</td>
+            <td>RST-${emp.employeeId}</td>
+        </tr>
+        <tr>
+            <td>PHONENO -</td>
+            <td>${emp.phoneno}</td>
+        </tr>
+        <tr>
+            <td>ALTERNATE PHNO -</td>
+            <td>${emp.alternatephno}</td>
+        </tr>
+        <tr>
+            <td> DATE OF BIRTH -</td>
+            <td>${emp.dateofbirth}</td>
+        </tr>
+        <tr>
+            <td>E-MAIL -</td>
+            <td>${emp.email}</td>
+        </tr>
+        <tr>
+            <td>PASSWORD -</td>
+            <td>${emp.password}</td>
+        </tr>
+        <tr>
+            <td>ADDRESS -</td>
+            <td>${emp.address}</td>
+        </tr>
+        <tr>
+            <td> GENDER -</td>
+            <td>${emp.gender}</td>
+        </tr>
+        <tr>
+            <td>DATE OF JOINING -</td>
+            <td>${emp.dateofjoining}</td>
+        </tr>
+        <tr>
+            <td> DESIGNATION -</td>
+            <td>${emp.designation}</td>
+        </tr>
+        <tr>
+            <td>EMPLOYEE TYPE -</td>
+            <td>${emp.employeetype}</td>
+        </tr>
+        <tr>
+            <td>EXPERIENCE-</td>
+            <td>${emp.totalexperience}</td>
+        </tr>
+        <tr>
+
+            <td>PROJECT :</td>
+        </tr>
+        <td>${emps.project}</td>
+        <tr>
+            <td>ROLE :</td>
+            <td>${emps.role}</td>
+        </tr>
+        <tr>
+            <td>TECHNICALSTACK :</td>
+            <td>${emps.technicalStack}</td>
+        </tr>
+        <tr>
+            <td>TASK :</td>
+            <td>${emps.task}</td>
+        </tr>
+        <tr>
+            <td>MANAGER :</td>
+            <td>${emps.manager}</td>
+        </tr>
+        <tr>
+            <td>MENTOR :</td>
+            <td>${emps.mentor}</td>
+        </tr>
+        <tr>
+            <td><a href="employeePage">LOGOUT</a></td>
+            <td><a href="/">Home</a></td>
+        </tr>
+    </table>
 </body>
 
 </html>

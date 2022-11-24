@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Login</title>
+    <title>ADMIN PAGE</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -45,6 +45,7 @@
                     <li>
                         <a href="${pageContext.request.contextPath }/getAll">All Employee List</a>
                     </li>
+                    <a href="javascript:history.back()">BACK</a>
                 </div>
             </div>
         </div>

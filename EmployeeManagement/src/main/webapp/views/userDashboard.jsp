@@ -155,8 +155,9 @@
                         <button class="btnSubmit">
                             <p><a href="ExtraDetails/${emp.employeeId}">ADD DETAILS</a></p>
                         </button>
+                        <p></p>
                         <button class="btnSubmit">
-                            <p><a href="views/adminPage.jsp">Back</a></p>
+                            <a href="javascript:history.back()">BACK</a>    
                         </button>
                     </div>
                 </div>

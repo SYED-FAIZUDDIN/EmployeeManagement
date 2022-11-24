@@ -79,6 +79,7 @@ h2.text-center.mb-3 {
     </style>
     <!-- <link rel="stylesheet" type="text/css" href="css/util.css" /> -->
     <link rel="stylesheet" type="text/css" href="views/css/main.css" />
+    <title>REGISTRATION</title>
   </head>
   <body>
     <div class="limiter">
@@ -178,6 +179,8 @@ h2.text-center.mb-3 {
                             type="number"
                             name="totalexperience"
                             required
+                            minlength="1"
+                            maxlength="20"
                           />
                         </td>
                       </tr>
@@ -195,6 +198,7 @@ h2.text-center.mb-3 {
               </div>
             </div>
           </form>
+          <a href="javascript:history.back()">BACK</a>    
         </div>
       </div>
     </div>

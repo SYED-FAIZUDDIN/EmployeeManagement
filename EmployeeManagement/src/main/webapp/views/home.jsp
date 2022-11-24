@@ -34,7 +34,7 @@
     
     <link rel="stylesheet" type="text/css" href="views/css/util.css" />
     <link rel="stylesheet" type="text/css" href="views/css/main.css" />
-    
+    <title>HOME</title>
   </head>
   <style>
     td {

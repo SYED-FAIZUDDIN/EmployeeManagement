@@ -126,10 +126,10 @@ public class EmployeeController {
 
 	@RequestMapping("update/{id}")
 	public String updateRecord(@PathVariable Integer id, Model m) {
-		EmployeeModel e = service.getEmployeeDetails(id);
-		EmployeeProfessionalModel emp = service.getProfessionalDetails(id);
-		m.addAttribute("emp", e);
-		m.addAttribute("emps", emp);
+		EmployeeModel employeeModel = service.getEmployeeDetails(id);
+		EmployeeProfessionalModel employeeProfessionalModel = service.getProfessionalDetails(id);
+		m.addAttribute("emp", employeeModel);
+		m.addAttribute("emps", employeeProfessionalModel);
 		return "update";
 	}
 
@@ -165,7 +165,7 @@ public class EmployeeController {
 		service.saveEmplyee(empModel);
 		model.addAttribute("emp", emp);
 		model.addAttribute("emps", empModel);
-		return "employeeDetails";
+		return "update";
 	}
 
 	@RequestMapping("employeeLogin")
